@@ -67,31 +67,31 @@ docker run --rm \
     composer install --ignore-platform-reqs 
 ```
 
-Acesse o container app
+Inicie a aplicação
 
 ```sh
-docker-compose exec app bash
+./vendor/bin/sail up
 ```
 
 Instale as dependências do projeto
 
 ```sh
-composer install
+./vendor/bin/sail composer install
 ```
 ```sh
-npm install
+./vendor/bin/sail npm install
 ```
 
 Gere a key do projeto Laravel
 
 ```sh
-php artisan key:generate
+./vendor/bin/sail artisan key:generate
 ```
 
 Rode as migrations
 
 ```sh
-php artisan migrate
+./vendor/bin/sail artisan migrate
 ```
 
 Acesse o projeto
